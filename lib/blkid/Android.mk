@@ -20,7 +20,8 @@ libext2_blkid_system_shared_libraries := libc
 
 libext2_blkid_c_includes := external/e2fsprogs/lib
 
-libext2_blkid_cflags := -Os -g -W -Wall \
+libext2_blkid_cflags := -O2 -g -W -Wall \
+	-fno-strict-aliasing \
 	-DHAVE_UNISTD_H \
 	-DHAVE_ERRNO_H \
 	-DHAVE_NETINET_IN_H \
